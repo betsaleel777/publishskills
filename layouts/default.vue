@@ -41,11 +41,11 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn> -->
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
         <v-list-item @click.native="right = !right">
@@ -59,7 +59,35 @@
       </v-list>
     </v-navigation-drawer> -->
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2020</span>
+      <v-row no-gutters>
+        <v-col cols="4" class="text-center"
+          ><v-chip class="ma-2" color="black" dark>
+            <v-icon left>mdi-cellphone-android</v-icon>
+            <strong>78-41-90-78 / 84-48-10-20</strong>
+          </v-chip>
+        </v-col>
+        <v-col cols="4" class="text-center"
+          ><v-chip class="ma-2" color="black" dark>
+            <v-icon left>mdi-home</v-icon>
+            <strong>Marcory / Cocody Mermoz</strong>
+          </v-chip></v-col
+        >
+        <!-- <v-col cols="3">
+          <v-chip class="ma-2" color="black" dark>
+            <span>&copy; 2020</span>
+          </v-chip>
+        </v-col> -->
+        <v-col cols="4" class="text-center">
+          <v-chip class="ma-2" color="black" dark>
+            <v-icon left>mdi-email</v-icon>
+            <a
+              class="mail"
+              href="mailto:shin.ahoussou@gmail.com?subject=ENTRETIEN"
+              >shin.ahoussou@gmail.com</a
+            >
+          </v-chip>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
@@ -91,3 +119,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.mail {
+  color: yellow;
+}
+</style>
