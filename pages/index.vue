@@ -192,6 +192,23 @@
 
 <script>
 export default {
+  head: {
+    title: 'AHOUSSOU JEAN-CHRIS ARNAUD🚀',
+    meta: [
+      {
+        hid: 'curiculum',
+        name: 'compétences',
+        content: 'Developpement web fulltack'
+      }
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
+    script: [
+      { src: '/head.js' },
+      // Supported since 1.0
+      { src: '/body.js', body: true },
+      { src: '/defer.js', defer: '' }
+    ]
+  },
   data: () => ({
     items: [
       {
