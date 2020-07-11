@@ -2,7 +2,7 @@
   <div>
     <v-layout column align-center>
       <v-avatar size="200">
-        <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="ahoussou" />
+        <img src="~/static/ahoussou.png" alt="ahoussou" />
       </v-avatar>
       <span> DEVELOPPEUR WEB </span>
     </v-layout>
@@ -196,9 +196,9 @@ export default {
     title: 'AHOUSSOU JEAN-CHRIS ARNAUD🚀',
     meta: [
       {
-        hid: 'curiculum',
+        hid: 'curriculum',
         name: 'compétences',
-        content: 'Developpement web fulltack'
+        content: 'Developpement web fullstack'
       }
     ],
     noscript: [{ innerHTML: 'Body No Scripts', body: true }],
