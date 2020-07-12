@@ -60,13 +60,13 @@
     </v-navigation-drawer> -->
     <v-footer :fixed="fixed" app>
       <v-row no-gutters>
-        <v-col cols="4" class="text-center"
+        <v-col class="text-center"
           ><v-chip class="ma-2" color="black" dark>
             <v-icon left>mdi-cellphone-android</v-icon>
             <strong>78-41-90-78 / 84-48-10-20</strong>
           </v-chip>
         </v-col>
-        <v-col cols="4" class="text-center"
+        <v-col class="text-center"
           ><v-chip class="ma-2" color="black" dark>
             <v-icon left>mdi-home</v-icon>
             <strong>Marcory / Cocody Mermoz</strong>
@@ -77,7 +77,7 @@
             <span>&copy; 2020</span>
           </v-chip>
         </v-col> -->
-        <v-col cols="4" class="text-center">
+        <v-col class="text-center">
           <v-chip class="ma-2" color="black" dark>
             <v-icon left>mdi-email</v-icon>
             <a
@@ -101,14 +101,19 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          icon: 'mdi-account-circle',
+          title: 'Profile',
+          to: '#profil'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'mdi-school',
+          title: 'Parcours',
+          to: '#parcour'
+        },
+        {
+          icon: 'mdi-code-braces',
+          title: 'Compétences',
+          to: '#competence'
         }
       ],
       miniVariant: false,
@@ -121,6 +126,6 @@ export default {
 </script>
 <style scoped>
 .mail {
-  color: yellow;
+  color: blue;
 }
 </style>

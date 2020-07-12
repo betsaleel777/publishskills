@@ -7,7 +7,7 @@
       <span> DEVELOPPEUR WEB </span>
     </v-layout>
     <v-divider></v-divider>
-    <h2 class="green--text">PROFILE</h2>
+    <h2 id="profil" class="green--text">PROFILE</h2>
     <v-container fluid>
       <v-card class="mx-auto" max-width="1200" outlined>
         <v-list-item three-line>
@@ -29,12 +29,12 @@
       </v-card>
     </v-container>
     <v-divider></v-divider>
-    <h2 class="green--text">PARCOURS ACADEMIQUE</h2>
+    <h2 id="parcour" class="green--text">PARCOURS ACADEMIQUE</h2>
     <v-container fluid>
       <v-card class="mx-auto" max-width="1200" outlined>
         <v-list-item three-line>
           <v-list-item-content>
-            <v-card-text>
+            <v-card-text class="parcour">
               <v-timeline align-top flat>
                 <v-timeline-item
                   v-for="(item, i) in items"
@@ -62,9 +62,9 @@
       <v-card class="mx-auto" max-width="1200" outlined>
         <v-list-item three-line>
           <v-list-item-content>
-            <v-card-text>
+            <v-card-text id="competence">
               <v-row align="center" class="spacer" no-gutters>
-                <v-col cols="3">
+                <v-col>
                   <v-list flat>
                     <v-subheader><h2>SGBD</h2></v-subheader>
                     <v-list-item-group color="black">
@@ -89,7 +89,7 @@
                     </v-list-item-group>
                   </v-list>
                 </v-col>
-                <v-col cols="3">
+                <v-col>
                   <v-list flat>
                     <v-subheader><h2>Java-Script</h2></v-subheader>
                     <v-list-item-group color="black">
@@ -114,7 +114,7 @@
                     </v-list-item-group>
                   </v-list>
                 </v-col>
-                <v-col cols="3">
+                <v-col>
                   <v-list flat>
                     <v-subheader><h2>PHP</h2></v-subheader>
                     <v-list-item-group color="black">
@@ -139,7 +139,7 @@
                     </v-list-item-group>
                   </v-list>
                 </v-col>
-                <v-col cols="3">
+                <v-col>
                   <v-list flat>
                     <v-subheader><h2>Devops</h2></v-subheader>
                     <v-list-item-group color="black">
@@ -201,13 +201,7 @@ export default {
         content: 'Developpement web fullstack'
       }
     ],
-    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
-    script: [
-      { src: '/head.js' },
-      // Supported since 1.0
-      { src: '/body.js', body: true },
-      { src: '/defer.js', defer: '' }
-    ]
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }]
   },
   data: () => ({
     items: [
@@ -315,9 +309,12 @@ export default {
 </script>
 <style lang="css" scoped>
 .profile {
-  font-size: 20px;
+  font-size: 1.23em;
 }
 .realisation {
-  font-size: 20px;
+  font-size: 1.5em;
+}
+.parcour {
+  font-size: 1.23em;
 }
 </style>
